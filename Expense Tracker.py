@@ -2,7 +2,7 @@ import pandas as pd
 from datetime import datetime
 import matplotlib.pyplot as plt
 
-class FinanceTracker:
+class ExpenseTracker:
     def __init__(self):
         #initialization of data frame to store transactions
         self.transactions = pd.DataFrame(columns=["Date","Description","Category","Amount","Type"])
@@ -71,7 +71,7 @@ class FinanceTracker:
 """ Add and View Transactions """
 
 #initialization of tracker
-tracker = FinanceTracker()
+tracker = ExpenseTracker()
 
 # enter transactions
 tracker.enter_transactions()
